@@ -6,10 +6,6 @@
   "scripts": {
     "test": "node test/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/naveenjafer/bayes-classifier.git"
-  },
   "keywords": [
     "naive",
     "bayes",
