@@ -1,26 +1,26 @@
 {
-  "name": "bayes-classifier",
-  "version": "0.0.5",
-  "description": "Naive Bayes classifier",
+  "name": "bayes-classifier-multigram",
+  "version": "0.0.2",
+  "description": "Naive Bayes classifier - MultiGrams - inspired by https://github.com/miguelmota/bayes-classifier.git",
   "main": "index.js",
   "scripts": {
     "test": "node test/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/miguelmota/bayes-classifier.git"
+    "url": "https://github.com/naveenjafer/bayes-classifier.git"
   },
   "keywords": [
     "naive",
     "bayes",
     "classifier"
   ],
-  "author": "Miguel Mota <hello@miguelmota.com> (http://www.miguelmota.com/)",
+  "author": "Naveen Jafer - naveen.n.jafer@gmail.com Thanks to - Miguel Mota for his base work.",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/miguelmota/bayes-classifier/issues"
+    "url": "https://github.com/naveenjafer/bayes-classifier/issues"
   },
-  "homepage": "https://github.com/miguelmota/bayes-classifier",
+  "homepage": "https://github.com/naveenjafer/bayes-classifier",
   "devDependencies": {
     "gulp": "^3.8.11",
     "gulp-browserify": "^0.5.1",

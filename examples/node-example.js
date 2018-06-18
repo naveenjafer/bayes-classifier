@@ -26,6 +26,8 @@ console.log(classifier.classify('The torta is epicly bad.')); // "negative"
 console.log(classifier.classify('The torta is horribly awesome.')); // "positive"
 
 console.log(classifier.getClassifications('Burritos are the meaning of life.'));
+console.log(classifier.getClassificationsAsPercent('Burritos are the meaning of life.'));
+
 /*
  [ { label: 'positive', value: 0.22222222222222224 },
    { label: 'negative', value: 0.11111111111111112 } ]

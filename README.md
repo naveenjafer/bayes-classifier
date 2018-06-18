@@ -2,20 +2,22 @@
 
 This is a [Naive Bayes classifier](http://en.wikipedia.org/wiki/Naive_Bayes_classifier) implementation written in JavaScript.
 
-I took out the relevant algorithms from the [appratus](https://github.com/NaturalNode/apparatus) and [natural](https://github.com/NaturalNode/natural) modules, and also the [Porter stemmer](https://github.com/NaturalNode/natural/tree/master/lib/natural/stemmers) algorithm. All credit goes to them.
+I have used the existing code by Miguel https://github.com/miguelmota/bayes-classifier.git and modified it to work with uni,bi and trigrams when calculating the score. I have also expanded the API to be able to give percentage directly for a query.
+
+Algorithms used - algorithms from the [appratus](https://github.com/NaturalNode/apparatus) and [natural](https://github.com/NaturalNode/natural) modules, and also the [Porter stemmer](https://github.com/NaturalNode/natural/tree/master/lib/natural/stemmers) algorithm. All credit goes to them.
 
 # Demo
-
+Refer to the demo by Miguel here.
 [https://lab.miguelmota.com/bayes-classifier](https://lab.miguelmota.com/bayes-classifier)
 
 # Install
 
 ```bash
-npm install bayes-classifier
+npm install bayes-classifier-multigram
 ```
 
 ```bash
-bower install bayes-classifier
+bower install bayes-classifier-multigram
 ```
 
 # Usage
@@ -53,6 +55,9 @@ console.log(classifier.getClassifications(`Burritos are the meaning of life.`))
  [ { label: 'positive', value: 0.22222222222222224 },
    { label: 'negative', value: 0.11111111111111112 } ]
 */
+console.log(classifier.getClassificationsAsPercent('Burritos are the meaning of life.'));
+[ { label: 'positive', value: '66.67%' },
+  { label: 'negative', value: '33.33%' } ]
 ```
 
 Restoring a classifier to avoid re-training data
@@ -81,6 +86,8 @@ classifier.restore(storedClassifier)
 #### classifier.classify(doc)
 
 #### classifier.getClassifications(doc)
+
+#### classifier.getClassificationsAsPercent(doc)
 
 #### classifier.restore(classifier)
 
