@@ -1,6 +1,6 @@
 {
   "name": "bayes-classifier-multigram",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Naive Bayes classifier - MultiGrams - inspired by https://github.com/miguelmota/bayes-classifier.git",
   "main": "index.js",
   "scripts": {
